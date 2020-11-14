@@ -1,3 +1,5 @@
-part 'theme.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-double defaultMargin = 26;
+part 'theme.dart';
