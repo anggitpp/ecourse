@@ -97,7 +97,7 @@ class SelectInterestPage extends StatelessWidget {
                       .toList(),
                 ),
                 SizedBox(
-                  height: 30,
+                  height: 40,
                 ),
                 Container(
                   width: double.infinity,
