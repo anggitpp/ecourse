@@ -3,6 +3,7 @@ part of 'shared.dart';
 double defaultMargin = 26;
 Color mainColor = '#75B9CC'.toColor();
 Color greyColor = '#8F8F8F'.toColor();
+Color backColor = '#F9F9F9'.toColor();
 TextStyle blueFontStyle = GoogleFonts.poppins(fontSize: 12, color: mainColor);
 TextStyle whiteFontStyle =
     GoogleFonts.poppins(fontSize: 12, color: Colors.white);

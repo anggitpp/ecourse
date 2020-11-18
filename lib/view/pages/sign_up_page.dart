@@ -9,6 +9,7 @@ class _SignUpPageState extends State<SignUpPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: backColor,
       body: ListView(
         children: [
           SafeArea(
@@ -60,8 +61,9 @@ class _SignUpPageState extends State<SignUpPage> {
                         width: 90,
                         height: 90,
                         decoration: BoxDecoration(
+                          shape: BoxShape.circle,
                           image: DecorationImage(
-                            image: AssetImage('assets/user_pic.png'),
+                            image: AssetImage('assets/profile.jpg'),
                           ),
                         ),
                       ),
@@ -73,7 +75,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         height: 24,
                         decoration: BoxDecoration(
                           image: DecorationImage(
-                            image: AssetImage('assets/btn_add_photo.png'),
+                            image: AssetImage('assets/btn_remove_photo.png'),
                           ),
                         ),
                       ),

@@ -9,6 +9,7 @@ class _SignInPageState extends State<SignInPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: backColor,
       body: SafeArea(
         child: ListView(
           children: [
