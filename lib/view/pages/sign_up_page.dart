@@ -83,6 +83,73 @@ class _SignUpPageState extends State<SignUpPage> {
               ),
             ],
           ),
+          SizedBox(
+            height: 10,
+          ),
+          Container(
+            width: double.infinity,
+            margin: EdgeInsets.symmetric(horizontal: defaultMargin),
+            child: Column(
+              children: [
+                TextField(
+                  decoration: InputDecoration(
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: mainColor),
+                    ),
+                    hintText: 'Full Name',
+                    hintStyle: blackFontStyleM.copyWith(color: mainColor),
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                TextField(
+                  decoration: InputDecoration(
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: mainColor),
+                    ),
+                    hintText: 'Email Address',
+                    hintStyle: blackFontStyleM.copyWith(color: mainColor),
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: mainColor),
+                    ),
+                    hintText: 'Password',
+                    hintStyle: blackFontStyleM.copyWith(color: mainColor),
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: mainColor),
+                    ),
+                    hintText: 'Confirm Password',
+                    hintStyle: blackFontStyleM.copyWith(color: mainColor),
+                  ),
+                ),
+                SizedBox(
+                  height: 30,
+                ),
+                FloatingActionButton(
+                  onPressed: () {},
+                  elevation: 0,
+                  backgroundColor: mainColor,
+                  child: Icon(MdiIcons.arrowRight),
+                )
+              ],
+            ),
+          ),
         ],
       ),
     );
