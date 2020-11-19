@@ -92,7 +92,9 @@ class _SignInPageState extends State<SignInPage> {
                           'Sign In',
                           style: whiteFontStyle.copyWith(fontSize: 20),
                         ),
-                        onPressed: () {}),
+                        onPressed: () {
+                          Get.to(MainPage());
+                        }),
                   ),
                   SizedBox(
                     height: 20,
@@ -104,9 +106,14 @@ class _SignInPageState extends State<SignInPage> {
                         'Start fresh now? ',
                         style: blackFontStyle,
                       ),
-                      Text(
-                        'Sign Up',
-                        style: blueFontStyle,
+                      GestureDetector(
+                        onTap: () {
+                          Get.to(SignUpPage());
+                        },
+                        child: Text(
+                          'Sign Up',
+                          style: blueFontStyle,
+                        ),
                       ),
                     ],
                   )

@@ -1,7 +1,24 @@
 part of 'pages.dart';
 
-class SplashPage extends StatelessWidget {
+class SplashPage extends StatefulWidget {
   @override
+  _SplashPageState createState() => _SplashPageState();
+}
+
+class _SplashPageState extends State<SplashPage> {
+  @override
+  void initState() {
+    super.initState();
+
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
+      final Duration duration = Duration(seconds: 3);
+
+      Timer(duration, () {
+        Get.to(SignInPage());
+      });
+    });
+  }
+
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: backColor,

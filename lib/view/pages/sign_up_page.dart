@@ -19,11 +19,16 @@ class _SignUpPageState extends State<SignUpPage> {
           ),
           Align(
             alignment: Alignment.topLeft,
-            child: Container(
-              margin: EdgeInsets.only(left: defaultMargin),
-              width: 24,
-              height: 24,
-              child: Icon(MdiIcons.arrowLeft),
+            child: GestureDetector(
+              onTap: () {
+                Get.back();
+              },
+              child: Container(
+                margin: EdgeInsets.only(left: defaultMargin),
+                width: 24,
+                height: 24,
+                child: Icon(MdiIcons.arrowLeft),
+              ),
             ),
           ),
           SizedBox(
@@ -144,7 +149,9 @@ class _SignUpPageState extends State<SignUpPage> {
                   height: 30,
                 ),
                 FloatingActionButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.to(SelectInterestPage());
+                  },
                   elevation: 0,
                   backgroundColor: mainColor,
                   child: Icon(MdiIcons.arrowRight),

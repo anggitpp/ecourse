@@ -58,8 +58,8 @@ class CoursePageCard extends StatelessWidget {
                         height: 8,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(4),
-                            bottomLeft: Radius.circular(4),
+                            topLeft: Radius.circular(2),
+                            bottomLeft: Radius.circular(2),
                           ),
                           color: "#7FD77F".toColor(),
                         ),
@@ -69,8 +69,8 @@ class CoursePageCard extends StatelessWidget {
                         height: 8,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.only(
-                            topRight: Radius.circular(4),
-                            bottomRight: Radius.circular(4),
+                            topRight: Radius.circular(2),
+                            bottomRight: Radius.circular(2),
                           ),
                           color: Colors.white,
                         ),

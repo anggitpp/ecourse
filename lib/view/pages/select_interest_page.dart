@@ -24,11 +24,16 @@ class SelectInterestPage extends StatelessWidget {
           ),
           Align(
             alignment: Alignment.topLeft,
-            child: Container(
-              margin: EdgeInsets.only(left: defaultMargin),
-              width: 24,
-              height: 24,
-              child: Icon(MdiIcons.arrowLeft),
+            child: GestureDetector(
+              onTap: () {
+                Get.back();
+              },
+              child: Container(
+                margin: EdgeInsets.only(left: defaultMargin),
+                width: 24,
+                height: 24,
+                child: Icon(MdiIcons.arrowLeft),
+              ),
             ),
           ),
           SizedBox(
@@ -103,7 +108,9 @@ class SelectInterestPage extends StatelessWidget {
                   width: double.infinity,
                   height: 50,
                   child: RaisedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.to(MainPage());
+                    },
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8),
                     ),
