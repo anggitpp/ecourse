@@ -8,3 +8,4 @@ part 'sign_in_page.dart';
 part 'sign_up_page.dart';
 part 'select_interest_page.dart';
 part 'main_page.dart';
+part 'course_page.dart';
