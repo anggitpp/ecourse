@@ -5,48 +5,82 @@ class CoursePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: backColor,
-      body: Center(
-        child: Column(
-          children: [
-            SafeArea(
-              child: SizedBox(
-                height: 20,
+      body: Stack(
+        children: [
+          Column(
+            children: [
+              SafeArea(
+                child: SizedBox(
+                  height: 20,
+                ),
               ),
-            ),
-            Container(
+              Container(
+                width: double.infinity,
+                margin: EdgeInsets.symmetric(horizontal: defaultMargin),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Icon(
+                      MdiIcons.arrowLeft,
+                      size: 24,
+                    ),
+                    Container(
+                      padding: EdgeInsets.only(right: 20),
+                      child: Text(
+                        'Course',
+                        style: blackFontStyleL.copyWith(
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                    SizedBox(),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              // Image(
+              //   image: AssetImage('assets/empty_course.png'),
+              // ),
+              // Text(
+              //   'Ups..',
+              //   style: blackFontStyleL.copyWith(
+              //       fontSize: 30, fontWeight: FontWeight.bold),
+              // ),
+              // SizedBox(
+              //   height: 10,
+              // ),
+              // Text(
+              //   'Seems like you have not joined course, yet..',
+              //   style: blackFontStyleL,
+              //   textAlign: TextAlign.center,
+              // ),
+            ],
+          ),
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 26),
+              height: 60,
               width: double.infinity,
-              margin: EdgeInsets.symmetric(horizontal: defaultMargin),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(20),
+                  topRight: Radius.circular(20),
+                ),
+              ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Icon(
-                    MdiIcons.arrowLeft,
-                    size: 24,
-                  ),
-                  Container(
-                    padding: EdgeInsets.only(right: 20),
-                    child: Text(
-                      'Course',
-                      style:
-                          blackFontStyleL.copyWith(fontWeight: FontWeight.bold),
-                    ),
-                  ),
-                  SizedBox(),
+                  Icon(Icons.home, size: 32),
+                  Icon(Icons.school, size: 32, color: mainColor),
+                  Icon(Icons.person, size: 32),
                 ],
               ),
             ),
-            SizedBox(
-              height: 20,
-            ),
-            Image(
-              image: AssetImage('assets/empty_course.png'),
-            ),
-            SizedBox(
-              height: 25,
-            ),
-            Text('Ups..')
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
