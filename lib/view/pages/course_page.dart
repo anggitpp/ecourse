@@ -37,7 +37,7 @@ class CoursePage extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 10,
+                height: 23,
               ),
               // Image(
               //   image: AssetImage('assets/empty_course.png'),
@@ -55,6 +55,26 @@ class CoursePage extends StatelessWidget {
               //   style: blackFontStyleL,
               //   textAlign: TextAlign.center,
               // ),
+              Container(
+                margin: EdgeInsets.symmetric(
+                    horizontal: defaultMargin, vertical: 15 / 2),
+                child: CoursePageCard(),
+              ),
+              Container(
+                margin: EdgeInsets.symmetric(
+                    horizontal: defaultMargin, vertical: 15 / 2),
+                child: CoursePageCard(),
+              ),
+              Container(
+                margin: EdgeInsets.symmetric(
+                    horizontal: defaultMargin, vertical: 15 / 2),
+                child: CoursePageCard(),
+              ),
+              Container(
+                margin: EdgeInsets.symmetric(
+                    horizontal: defaultMargin, vertical: 15 / 2),
+                child: CoursePageCard(),
+              ),
             ],
           ),
           Align(
