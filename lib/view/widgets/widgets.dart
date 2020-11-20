@@ -5,3 +5,4 @@ import 'package:supercharged/supercharged.dart';
 
 part 'course_card.dart';
 part 'course_page_card.dart';
+part 'search_page_card.dart';

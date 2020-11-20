@@ -73,8 +73,12 @@ class _MainPageState extends State<MainPage> {
                       SizedBox(
                         height: 20,
                       ),
-                      Container(
+                      GestureDetector(
+                        onTap: () {
+                          Get.to(SearchPage());
+                        },
                         child: TextField(
+                          enabled: false,
                           decoration: InputDecoration(
                             prefixIcon: Icon(
                               Icons.search,
@@ -82,16 +86,11 @@ class _MainPageState extends State<MainPage> {
                             ),
                             hintText: 'Search here..',
                             hintStyle: TextStyle(color: mainColor),
-                            focusedBorder: OutlineInputBorder(
+                            disabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(8),
                               borderSide: BorderSide(color: greyColor),
                             ),
                             contentPadding: EdgeInsets.symmetric(vertical: 5),
-                            border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(8),
-                              borderSide:
-                                  BorderSide(color: greyColor, width: 2),
-                            ),
                           ),
                         ),
                       ),
@@ -199,7 +198,11 @@ class _MainPageState extends State<MainPage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Icon(Icons.home, size: 32, color: mainColor),
-                  Icon(Icons.school, size: 32),
+                  GestureDetector(
+                      onTap: () {
+                        Get.to(CoursePage());
+                      },
+                      child: Icon(Icons.school, size: 32)),
                   Icon(Icons.person, size: 32),
                 ],
               ),

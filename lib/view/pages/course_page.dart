@@ -93,7 +93,11 @@ class CoursePage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Icon(Icons.home, size: 32),
+                  GestureDetector(
+                      onTap: () {
+                        Get.to(MainPage());
+                      },
+                      child: Icon(Icons.home, size: 32)),
                   Icon(Icons.school, size: 32, color: mainColor),
                   Icon(Icons.person, size: 32),
                 ],
