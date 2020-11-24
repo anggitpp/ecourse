@@ -16,3 +16,4 @@ part 'main_page.dart';
 part 'course_page.dart';
 part 'search_page.dart';
 part 'course_detail_page.dart';
+part 'popular_interest_page.dart';

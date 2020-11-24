@@ -8,3 +8,4 @@ part 'course_card.dart';
 part 'course_page_card.dart';
 part 'search_page_card.dart';
 part 'course_detail_list.dart';
+part 'popular_interest_list.dart';
