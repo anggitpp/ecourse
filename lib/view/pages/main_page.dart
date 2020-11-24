@@ -32,11 +32,26 @@ class _MainPageState extends State<MainPage> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Container(
-                            child: Icon(
-                              Icons.dehaze,
-                              size: 24,
-                            ),
+                          Row(
+                            children: [
+                              Container(
+                                width: 60,
+                                height: 60,
+                                decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                    fit: BoxFit.cover,
+                                    image: AssetImage('assets/profile.jpg'),
+                                  ),
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                              ),
+                              SizedBox(width: 15),
+                              Text(
+                                'Hi, Anggit!',
+                                style: blackFontStyleL.copyWith(
+                                    fontWeight: FontWeight.bold),
+                              )
+                            ],
                           ),
                           Container(
                             child: Icon(
@@ -44,30 +59,6 @@ class _MainPageState extends State<MainPage> {
                               size: 24,
                             ),
                           ),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      Row(
-                        children: [
-                          Container(
-                            width: 60,
-                            height: 60,
-                            decoration: BoxDecoration(
-                              image: DecorationImage(
-                                fit: BoxFit.cover,
-                                image: AssetImage('assets/profile.jpg'),
-                              ),
-                              borderRadius: BorderRadius.circular(8),
-                            ),
-                          ),
-                          SizedBox(width: 15),
-                          Text(
-                            'Hi, Anggit!',
-                            style: blackFontStyleL.copyWith(
-                                fontWeight: FontWeight.bold),
-                          )
                         ],
                       ),
                       SizedBox(
